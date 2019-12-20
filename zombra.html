@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zombra</title>
+	</head>
+	<body>
+		<div class="bar">
+			<a href="zombra.html" id="homeLink"><img src="logo.png"></image></a>
+			<h1>Zombra</h1>
+		</div>
+		<div class="main">
+			<ul class="list">
+				<li>
+					<div>
+						<a href="articles/organelles.html">
+							<img src="logo.png"></img>
+							<h2>Where Do Organelles Come From?</h2>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="cookies" id="cookies">
+			<p>We don't use cookies, but if we did we'd tell you here.</p>
+			<button onclick = "closeCookies();">Close</button>
+		</div>
+	</body>
+	<footer>
+		<script>
+			function closeCookies(){
+				document.getElementById("cookies").style.display = "none";
+				document.getElementById("homeLink").href = "zombra.html?a";	
+			}
+			
+			if(location.search.substring(1) === "a"){
+				closeCookies();
+			}
+		</script>
+		<style>
+			.bar {
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 50px;
+				background-color: #888;
+				width: 100%;
+			}
+			
+			.bar img {
+				height: 50px;
+				float: left;
+			}
+			
+			.bar h1 {
+				margin: 0;
+				font-size: 40px;
+				text-align: center;
+				color: green;
+				font-family: "Brush Script MT";
+			}
+			
+			.main {
+				margin-top: 60px;
+			}
+			
+			.main ul {
+				list-style-type: none;
+				padding: 0;
+			}
+			
+			.cookies {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				color: #ff0;
+				background-color: #000;
+				padding: 10px;
+			}
+			
+			.cookies p {
+				float: left;
+			}
+			
+			.cookies button {
+				float: left;
+				margin: 10px;
+			}
+			
+			.list div {
+				background-color: #DDD;
+				width: 100%;
+			}
+			
+			.list a {
+				color: black;
+				text-decoration: none;
+			}
+			
+			.list img {
+				float: left;
+				height:40px;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.list h2 {
+				font-size: 35px;
+				height: 40px;
+				padding: 0;
+				margin: 0;
+				font-family: serif;
+			}
+		<style>
+	</footer>
+</html>
